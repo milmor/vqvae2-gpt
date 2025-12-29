@@ -11,6 +11,18 @@ This repository implements a two-stage generative model combining **VQ-VAE-2** (
 
 The key idea is to compress images into discrete tokens using VQ-VAE, then model the distribution of these tokens using autoregressive Transformers (similar to GPT for text). This approach enables high-quality, diverse image generation.
 
+## Results
+
+### VQ-VAE-2 Training Progress
+![VQ-VAE Reconstruction Training](gifs/vqvae_reconstruction_training.gif)
+
+The VQ-VAE learns to reconstruct images by compressing them into discrete codes. The top row shows original images, and the bottom row shows reconstructions improving over training.
+
+### Transformer Generation Progress
+![Transformer Generation Training](gifs/transformer_generation_training.gif)
+
+The Transformer learns to generate new images by modeling the distribution of discrete codes. Generated images improve over training as the model learns the data distribution.
+
 ## Quick Start
 
 ### 1. Train VQ-VAE

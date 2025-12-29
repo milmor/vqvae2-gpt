@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Model checkpoints
+*.pt
+*.pth
+
+# Training outputs
+*_mnist/checkpoint/
+*_mnist/generated/
+*_mnist/plots/
+*_mnist/log/
+
+# Data
+MNIST/
