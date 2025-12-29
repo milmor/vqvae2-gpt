@@ -1,0 +1,29 @@
+{
+  "vqvae": {
+    "checkpoint_path": "vqvae_mnist/checkpoint/vqvae_mnist_8000.pt"
+  },
+  "model_top": {
+    "n_class": 128,
+    "dim": 512,
+    "num_heads": 8,
+    "depth": 6,
+    "ff_dim": 2048,
+    "dropout": 0.1
+  },
+  "model_bottom": {
+    "n_class": 128,
+    "dim": 512,
+    "num_heads": 8,
+    "depth": 6,
+    "ff_dim": 2048,
+    "dropout": 0.1
+  },
+  "training": {
+    "batch_size": 32,
+    "lr": 3e-4,
+    "num_steps_top": 1000,
+    "num_steps_bottom": 10000
+  },
+  "run_name": "transformer_mnist"
+}
+

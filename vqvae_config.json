@@ -1,0 +1,22 @@
+{
+  "model": {
+    "in_channel": 1,
+    "channel": 64,
+    "n_res_block": 2,
+    "n_res_channel": 32,
+    "embed_dim": 32,
+    "n_embed": 128
+  },
+  "training": {
+    "batch_size": 64,
+    "num_workers": 2,
+    "lr": 3e-4,
+    "num_steps": 1000000,
+    "latent_loss_weight": 0.25
+  },
+  "dataset": {
+    "image_size": 32
+  },
+  "run_name": "vqvae_mnist"
+}
+
