@@ -60,6 +60,11 @@ The VQ-VAE learns to reconstruct images by compressing them into discrete codes.
 
 The Transformer learns to generate new images by modeling the distribution of discrete codes. Generated images improve over training as the model learns the data distribution.
 
+### Progressive Generation Process
+![Progressive Generation](gifs/generation.gif)
+
+The top row shows the generated images evolving, while the middle and bottom rows show the discrete top and bottom codes being generated progressively. 
+
 ## Attribution
 
 - This implementation uses code from the [rosinality/vq-vae-2-pytorch](https://github.com/rosinality/vq-vae-2-pytorch) repository, licensed under MIT and Apache Version 2.0 licenses.
